@@ -1,0 +1,30 @@
+@import "colors";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 97.5%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: $first;
+    top: 0%;
+    z-index: 10;
+    main{
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        a{
+            color: $thirs;
+            margin: 1rem;
+            &:hover{
+                color: $second;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "colors";
+
+footer{
+    background-color: $first;
+    color: $thirs;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 2rem;
+    > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        > h1{
+            font: 900 4.2rem $text1;
+            color: $thirs;
+        }
+        > p{
+            font: 900 1.5rem $text1;
+            color: $thirs
+        }
+        > h5{
+            font: 900 1rem $text1;
+            border-bottom: 2px solid $four;
+            color: $thirs;
+        }
+    }
+    > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > a{
+            color: $thirs;
+            text-decoration: none;
+            margin: 2px;
+            font: italic 900 1rem $text2;
+            cursor: pointer;
+            &:hover{
+                color: $four;
+            }
+        }
+    }
+}
